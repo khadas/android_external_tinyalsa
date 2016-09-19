@@ -113,6 +113,7 @@ struct pcm_config {
      * (pcm_open() called with PCM_MMAP flag set).   Use 0 for default.
      */
     int avail_min;
+    int flag;
 };
 
 /* PCM parameters */
