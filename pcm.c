@@ -39,7 +39,7 @@
 #include <sys/mman.h>
 #include <sys/time.h>
 #include <limits.h>
-#include <cutils/log.h>
+//#include <cutils/log.h>
 #include <linux/ioctl.h>
 #define __force
 #define __bitwise
