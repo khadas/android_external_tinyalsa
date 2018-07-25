@@ -20,6 +20,20 @@ cc_library {
     },
 }
 
+cc_library {
+    name: "libtinyalsa_ext",
+    vendor: true,
+    vndk: {
+        enabled: true,
+        extends: "libtinyalsa"
+    },
+    cflags: ["-DLIBTINYALSA_ENABLE_VNDK_EXT","-Werror", "-Wno-macro-redefined"],
+    srcs: [
+        "mixer.c",
+        "pcm.c",
+    ],
+}
+
 cc_binary {
     name: "tinyplay",
     host_supported: true,
